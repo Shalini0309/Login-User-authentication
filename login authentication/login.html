@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login User Authentication</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Login User Authentication</h1>
+    <div style="font-weight: bolder;" id="message"></div>
+    <div class="R" id="registration-form">
+      <h2 style="font-weight: 1000; ">Register</h2>
+      <input type="text" class="input" id="reg-username" placeholder="Username">
+      <input type="password" class="input" id="reg-password" placeholder="Password">
+      <br> <button onclick="register()">Register</button>
+    </div>
+    <div class="L" id="login-form">
+      <h2 style="font-weight: 1000;">Login</h2>
+      <input type="text" class="input" id="login-username" placeholder="Username">
+      <input type="password" class="input" id="login-password" placeholder="Password">
+     <br> <button onclick="login()">Login</button>
+    </div>
+    <div id="secured-content" class="hidden">
+      <h2 style="font-weight: 1000;">Secured Page</h2>
+      <p style="font-weight: 1000;">This is content that only authenticated users can access.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
